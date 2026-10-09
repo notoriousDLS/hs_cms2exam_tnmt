@@ -1,0 +1,102 @@
+<!--
+  templateType: "section"
+  label: "Top Section Image Text"
+  screenshotPath: "../turtle-theme/images/section-previews/banner.png"
+  description: "Top banner for the practicum image and text modules default from @HubSpot"
+  isAvailableForNewContent: true
+-->
+{% dnd_section
+  background_color="#f8fafc",
+  vertical_alignment="MIDDLE"
+%}
+
+    {% dnd_column
+      width=4,
+      padding={
+        "top": "1em",
+        "right": "1em",
+        "bottom": "1em",
+        "left": "1em"
+      },
+      margin={
+        "top": "1em",
+        "right": "1em",
+        "bottom": "1em",
+        "left": "1em"
+      },
+      vertical_alignment="MIDDLE",
+      "responsive_breakpoints": [
+        {
+          "name": "mobile",
+          "mediaQuery": "@media (max-width: 767px)",
+          "previewWidth": {
+            "value": 767
+          }
+        }
+    %}
+    {% dnd_row %}
+        {% dnd_module
+            path="@hubspot/linked_image",
+            
+            {% dnd_section img={ 
+                'default': {              
+                      "alt": "All four turtles with their weapons",
+                      "src": "https://145453508.fs1.hubspotusercontent-eu1.net/hub/145453508/hubfs/TNMT-edit.jpeg",
+                      "loading": "lazy",
+                      "max_width": 420,
+                      "size_type": "auto_custom_max" },
+                'mobile': { 
+                      "max_width": 200
+                      }
+
+            img={
+              "alt": "All four turtles with their weapons",
+              "src": "https://145453508.fs1.hubspotusercontent-eu1.net/hub/145453508/hubfs/TNMT-edit.jpeg",
+              "loading": "lazy",
+              "max_width": 420,
+              "size_type": "auto_custom_max"
+            }
+            padding="45px",
+            margin="45px"
+        %}
+        {% end_dnd_module %}
+    {% end_dnd_row %}
+    {% end_dnd_column %}
+
+    {% dnd_column
+      offset=4,
+      width=4,
+      max_width: 4,      
+      padding={
+        "top": "1em",
+        "right": "1em",
+        "bottom": "1em",
+        "left": "1em"
+      },
+      margin={
+        "top": "1em",
+        "right": "1em",
+        "bottom": "1em",
+        "left": "1em"
+      },
+      vertical_alignment="MIDDLE",
+    "responsive_breakpoints": [
+        {
+          "name": "mobile",
+          "mediaQuery": "@media (max-width: 767px)",
+          "previewWidth": {
+            "value": 520
+          }
+        }      
+    %}
+    {% dnd_row %}
+        {% dnd_module
+            path="@hubspot/rich_text",
+            html="<h1 class='intro-text'>Want to learn about the Teenage Mutant Ninja Turtles?</h1>
+            <p>Of course you do!</p>"
+        %}
+        {% end_dnd_module %}
+    {% end_dnd_row %}
+    {% end_dnd_column %}
+
+{% end_dnd_section %}

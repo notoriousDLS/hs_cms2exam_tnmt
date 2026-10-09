@@ -1,0 +1,187 @@
+{% include = '/turtle-theme/css/main.css' %}
+
+
+/* CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav ul li a:focus,
+nav ul li a:hover {
+    background-color: #555;
+    outline: none;
+}
+
+nav ul li a:focus {
+    outline: 3px solid #ffd700;
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+a {
+    color: #0066cc;
+}
+
+a:hover,
+a:focus {
+    outline: 2px dotted #004499;
+}
+
+/* Section with text and image */
+.section-text-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.section-text {
+    width: 50%;
+}
+
+.section-image {
+    width: 45%;
+}
+
+.section-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Card grid styling */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 8px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+@media (max-width: 900px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-text-image {
+        flex-direction: column;
+    }
+
+.section-text,
+.section-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* overide styles */
+
+header {
+    background : {{ theme.header.background.color.hex }};
+}
+
+footer {
+    background : {{ theme.footer.background.color.hex  }}; 
+}
+
+
+main#main-content {
+    max-width: 100%;
+    margin: auto;
+}
+
+/* title layout shift */
+
+h1.intro-text {
+    width: 525px;
+}
+
+@media (min-width: 768px) {
+  h1.intro-text {
+    width: 420px; 
+  }
+}
+

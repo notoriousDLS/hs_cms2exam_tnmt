@@ -1,0 +1,213 @@
+[ {
+  "id" : "116a8f1c-eeb4-7769-6e82-7113611c76d2",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "ccd95dfd-836d-b6bd-1877-286da6a90f96",
+    "name" : "border",
+    "display_width" : null,
+    "label" : "Border",
+    "required" : false,
+    "locked" : false,
+    "allow_custom_border_sides" : false,
+    "type" : "border",
+    "default" : {
+      "top" : {
+        "style" : "solid",
+        "width" : {
+          "value" : 2,
+          "units" : "px"
+        },
+        "color" : "#daffda",
+        "opacity" : 100
+      },
+      "bottom" : {
+        "style" : "solid",
+        "width" : {
+          "value" : 2,
+          "units" : "px"
+        },
+        "color" : "#daffda",
+        "opacity" : 100
+      },
+      "left" : {
+        "style" : "solid",
+        "width" : {
+          "value" : 2,
+          "units" : "px"
+        },
+        "color" : "#daffda",
+        "opacity" : 100
+      },
+      "right" : {
+        "style" : "solid",
+        "width" : {
+          "value" : 2,
+          "units" : "px"
+        },
+        "color" : "#daffda",
+        "opacity" : 100
+      }
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "border" : {
+      "top" : {
+        "style" : "solid",
+        "width" : {
+          "value" : 2,
+          "units" : "px"
+        },
+        "color" : "#daffda",
+        "opacity" : 100
+      },
+      "bottom" : {
+        "style" : "solid",
+        "width" : {
+          "value" : 2,
+          "units" : "px"
+        },
+        "color" : "#daffda",
+        "opacity" : 100
+      },
+      "left" : {
+        "style" : "solid",
+        "width" : {
+          "value" : 2,
+          "units" : "px"
+        },
+        "color" : "#daffda",
+        "opacity" : 100
+      },
+      "right" : {
+        "style" : "solid",
+        "width" : {
+          "value" : 2,
+          "units" : "px"
+        },
+        "color" : "#daffda",
+        "opacity" : 100
+      }
+    }
+  }
+}, {
+  "id" : "0137cb17-2e0d-6f21-4f12-f4218ddeb8b9",
+  "name" : "turtle",
+  "display_width" : null,
+  "label" : "Turtle",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "675bb2d2-1392-263b-4f27-b7453636733c",
+    "name" : "turtle_name",
+    "display_width" : null,
+    "label" : "Turtle Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Leonardo"
+  }, {
+    "id" : "text",
+    "name" : "description",
+    "display_width" : null,
+    "label" : "Turtle",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Leonardo Leads.</p>"
+  }, {
+    "id" : "bcd22bb7-57c3-97af-50ee-dcd2702eba8e",
+    "name" : "turtle_image",
+    "display_width" : null,
+    "label" : "Turtle Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : true,
+    "type" : "image",
+    "default" : {
+      "size_type" : "exact",
+      "src" : "https://145453508.fs1.hubspotusercontent-eu1.net/hubfs/145453508/leonardo-300-edit.webp",
+      "alt" : "Leonardo",
+      "loading" : "lazy",
+      "width" : 300,
+      "height" : 300,
+      "max_width" : 300,
+      "max_height" : 300
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "turtle_name" : "Leonardo",
+    "description" : "<p>Leonardo Leads.</p>",
+    "turtle_image" : {
+      "size_type" : "exact",
+      "src" : "https://145453508.fs1.hubspotusercontent-eu1.net/hubfs/145453508/leonardo-300-edit.webp",
+      "alt" : "Leonardo",
+      "loading" : "lazy",
+      "width" : 300,
+      "height" : 300,
+      "max_width" : 300,
+      "max_height" : 300
+    }
+  }, {
+    "turtle_name" : "Leonardo",
+    "description" : "<p>Leonardo Leads.</p>",
+    "turtle_image" : {
+      "size_type" : "exact",
+      "src" : "https://145453508.fs1.hubspotusercontent-eu1.net/hubfs/145453508/leonardo-300-edit.webp",
+      "alt" : "Leonardo",
+      "loading" : "lazy",
+      "width" : 300,
+      "height" : 300,
+      "max_width" : 300,
+      "max_height" : 300
+    }
+  }, {
+    "turtle_name" : "Leonardo",
+    "description" : "<p>Leonardo Leads.</p>",
+    "turtle_image" : {
+      "size_type" : "exact",
+      "src" : "https://145453508.fs1.hubspotusercontent-eu1.net/hubfs/145453508/leonardo-300-edit.webp",
+      "alt" : "Leonardo",
+      "loading" : "lazy",
+      "width" : 300,
+      "height" : 300,
+      "max_width" : 300,
+      "max_height" : 300
+    }
+  }, {
+    "turtle_name" : "Leonardo",
+    "description" : "<p>Leonardo Leads.</p>",
+    "turtle_image" : {
+      "size_type" : "exact",
+      "src" : "https://145453508.fs1.hubspotusercontent-eu1.net/hubfs/145453508/leonardo-300-edit.webp",
+      "alt" : "Leonardo",
+      "loading" : "lazy",
+      "width" : 300,
+      "height" : 300,
+      "max_width" : 300,
+      "max_height" : 300
+    }
+  } ]
+} ]

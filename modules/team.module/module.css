@@ -1,0 +1,31 @@
+div.TNMT-container {
+    background: #f0f8ff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em
+}
+
+.card {
+    flex: 0 1 24%;
+    justify-content: space-between
+}
+
+.description {
+    font-size: xx-large
+}
+
+
+@media screen and (max-width: 1024px) {
+ 
+    .card {
+        flex: 0 1 calc(50% - 1em);
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .card {
+        flex: 0 1 calc(99% - 1em);
+        margin: 0 auto;
+    }
+}

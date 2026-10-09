@@ -1,0 +1,21 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+
+-->
+
+{#
+ screenshotPath: ../turtle-theme/images/section-previews/banner.png
+#}
+{% extends './layouts/base.html' %}
+
+{% block body %}
+    {% dnd_area 'top section' %}
+          {% include_dnd_partial path="../sections/banner-text-image.html" %}
+    {% end_dnd_area %}
+
+    {% dnd_area 'main body section' %}
+          {% include_dnd_partial path="../sections/turtle-team.html" %}
+    {% end_dnd_area %}
+
+{% endblock body %}
